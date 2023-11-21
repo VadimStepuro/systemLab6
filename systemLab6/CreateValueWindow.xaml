@@ -1,0 +1,19 @@
+﻿<Window x:Class="systemLab6.CreateValueWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:systemLab6"
+        mc:Ignorable="d"
+        Title="CreateValueWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="type" Margin="313,169,313,217"/>
+        <TextBox TextWrapping="Wrap" x:Name="value" Text="" Margin="601,169,44,217"/>
+        <TextBlock TextWrapping="Wrap" Text="Choose type" Margin="365,100,313,291"/>
+        <TextBlock TextWrapping="Wrap" Text="Value" Margin="636,100,42,291"/>
+        <Button Content="Create" Margin="289,286,289,81" Click="Button_Click"/>
+        <TextBox TextWrapping="Wrap" x:Name="name" Text="" Margin="55,169,590,217"/>
+        <TextBlock TextWrapping="Wrap" Text="Name" Margin="90,100,588,291"/>
+
+    </Grid>
+</Window>

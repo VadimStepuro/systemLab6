@@ -1,0 +1,21 @@
+﻿<Window x:Class="systemLab6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:systemLab6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock TextWrapping="Wrap" Text="Registry" Margin="34,10,597,401"/>
+        <TreeView x:Name="treeView" Margin="34,53,522,164"/>
+        <ListBox SelectionChanged="onSelected" x:Name="listValues" Margin="333,53,118,164"/>
+        <Button x:Name="addSubKeyButton" Content="Add Subkey" Margin="34,366,682,10" Click="Button_Click"/>
+        <Button Content="Delete key" Margin="184,366,532,10" Click="Button_Click_1"/>
+        <Button Content="Add value" Margin="333,316,383,66" Click="Button_Click_2"/>
+        <Button Content="Delete value" Margin="598,316,118,66" Click="Button_Click_3"/>
+        <TextBox x:Name="subKeyName" TextWrapping="Wrap" Text="" Margin="34,303,574,92" TextChanged="subKeyName_TextChanged"/>
+
+
+    </Grid>
+</Window>
